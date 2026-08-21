@@ -1,0 +1,11 @@
+[
+    {
+        "label": "Run AAEmu.Aspire.AppHost: http",
+        "command": "dotnet",
+        "args": ["run", "--project", "C:/GameArcheage/Server/AAEmu.Aspire.AppHost/AAEmu.Aspire.AppHost.csproj", "--launch-profile", "http"],
+        // "args": ["watch", "--project", "C:/GameArcheage/Server/AAEmu.Aspire.AppHost/AAEmu.Aspire.AppHost.csproj", "--launch-profile", "http"],
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+]
