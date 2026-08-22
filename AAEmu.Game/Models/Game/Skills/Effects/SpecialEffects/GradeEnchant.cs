@@ -181,7 +181,7 @@ public class GradeEnchant : SpecialEffectAction
                 charmInfo.AddDowngradeMul)
             : gradeTemplate.EnchantDowngradeRatio;
 
-        if (successRoll < successChance)
+        if (successRoll < (successChance * 10))
         {
             if (isLucky && greatSuccessRoll < greatSuccessChance)
             {
@@ -195,6 +195,7 @@ public class GradeEnchant : SpecialEffectAction
             return GradeEnchantResult.Success;
         }
 
+        return GradeEnchantResult.Fail;
         if (breakRoll < breakChance)
         {
             return GradeEnchantResult.Break;
